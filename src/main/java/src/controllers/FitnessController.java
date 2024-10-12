@@ -27,7 +27,7 @@ public class FitnessController {
         logger.info(String.valueOf(recordRequest));
         fitnessService.addRecord(recordRequest.getName(), recordRequest.getSchedule_id());
         logger.info(recordRequest.getName() + recordRequest.getSchedule_id());
-        ResponseEntity<String> response = new ResponseEntity<>("Вы успешно записались", HttpStatus.OK);
+        ResponseEntity<String> response = new ResponseEntity<>("Succesfully!", HttpStatus.OK);
         return response;
     }
 
